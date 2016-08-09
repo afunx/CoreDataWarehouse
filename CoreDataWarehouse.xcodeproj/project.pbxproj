@@ -26,6 +26,7 @@
 		077DB3451D59D0D40070C854 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		077DB3481D59D0D40070C854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		077DB34A1D59D0D40070C854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		077DB3521D59D23E0070C854 /* ESPSingletonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPSingletonMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,8 @@
 		077DB3381D59D0D40070C854 /* CoreDataWarehouse */ = {
 			isa = PBXGroup;
 			children = (
+				077DB3511D59D20B0070C854 /* Generic Macro */,
+				077DB3501D59D1FD0070C854 /* Generic Core Data Classes */,
 				077DB33C1D59D0D40070C854 /* AppDelegate.h */,
 				077DB33D1D59D0D40070C854 /* AppDelegate.m */,
 				077DB33F1D59D0D40070C854 /* ViewController.h */,
@@ -77,6 +80,21 @@
 				077DB33A1D59D0D40070C854 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		077DB3501D59D1FD0070C854 /* Generic Core Data Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Generic Core Data Classes";
+			sourceTree = "<group>";
+		};
+		077DB3511D59D20B0070C854 /* Generic Macro */ = {
+			isa = PBXGroup;
+			children = (
+				077DB3521D59D23E0070C854 /* ESPSingletonMacro.h */,
+			);
+			name = "Generic Macro";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +231,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -250,7 +268,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
