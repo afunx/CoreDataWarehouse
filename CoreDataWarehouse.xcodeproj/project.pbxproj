@@ -14,6 +14,10 @@
 		077DB3461D59D0D40070C854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077DB3451D59D0D40070C854 /* Assets.xcassets */; };
 		077DB3491D59D0D40070C854 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077DB3471D59D0D40070C854 /* LaunchScreen.storyboard */; };
 		077DB3551D59D2980070C854 /* ESPCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 077DB3541D59D2980070C854 /* ESPCoreDataHelper.m */; };
+		077DB35E1D59E2C40070C854 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 077DB35C1D59E2C40070C854 /* Model.xcdatamodeld */; };
+		077DB36A1D59E63B0070C854 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 077DB3671D59E63B0070C854 /* User+CoreDataProperties.m */; };
+		077DB36B1D59E63B0070C854 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 077DB3691D59E63B0070C854 /* User.m */; };
+		077DB36E1D59E6720070C854 /* EspressifCoreDataTester.m in Sources */ = {isa = PBXBuildFile; fileRef = 077DB36D1D59E6720070C854 /* EspressifCoreDataTester.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,13 @@
 		077DB3521D59D23E0070C854 /* ESPSingletonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPSingletonMacro.h; sourceTree = "<group>"; };
 		077DB3531D59D2980070C854 /* ESPCoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPCoreDataHelper.h; sourceTree = "<group>"; };
 		077DB3541D59D2980070C854 /* ESPCoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPCoreDataHelper.m; sourceTree = "<group>"; };
+		077DB35D1D59E2C40070C854 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		077DB3661D59E63B0070C854 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "User+CoreDataProperties.h"; path = "Espressif Data Model/User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		077DB3671D59E63B0070C854 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "User+CoreDataProperties.m"; path = "Espressif Data Model/User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		077DB3681D59E63B0070C854 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = "Espressif Data Model/User.h"; sourceTree = "<group>"; };
+		077DB3691D59E63B0070C854 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = "Espressif Data Model/User.m"; sourceTree = "<group>"; };
+		077DB36C1D59E6720070C854 /* EspressifCoreDataTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EspressifCoreDataTester.h; sourceTree = "<group>"; };
+		077DB36D1D59E6720070C854 /* EspressifCoreDataTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EspressifCoreDataTester.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +73,10 @@
 		077DB3381D59D0D40070C854 /* CoreDataWarehouse */ = {
 			isa = PBXGroup;
 			children = (
+				077DB3581D59DD5A0070C854 /* Espressif Data Model */,
 				077DB3511D59D20B0070C854 /* Generic Macro */,
 				077DB3501D59D1FD0070C854 /* Generic Core Data Classes */,
+				077DB36F1D59E67E0070C854 /* Generic Test Classes */,
 				077DB33C1D59D0D40070C854 /* AppDelegate.h */,
 				077DB33D1D59D0D40070C854 /* AppDelegate.m */,
 				077DB33F1D59D0D40070C854 /* ViewController.h */,
@@ -100,6 +113,27 @@
 				077DB3521D59D23E0070C854 /* ESPSingletonMacro.h */,
 			);
 			name = "Generic Macro";
+			sourceTree = "<group>";
+		};
+		077DB3581D59DD5A0070C854 /* Espressif Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				077DB3661D59E63B0070C854 /* User+CoreDataProperties.h */,
+				077DB3671D59E63B0070C854 /* User+CoreDataProperties.m */,
+				077DB3681D59E63B0070C854 /* User.h */,
+				077DB3691D59E63B0070C854 /* User.m */,
+				077DB35C1D59E2C40070C854 /* Model.xcdatamodeld */,
+			);
+			name = "Espressif Data Model";
+			sourceTree = "<group>";
+		};
+		077DB36F1D59E67E0070C854 /* Generic Test Classes */ = {
+			isa = PBXGroup;
+			children = (
+				077DB36C1D59E6720070C854 /* EspressifCoreDataTester.h */,
+				077DB36D1D59E6720070C854 /* EspressifCoreDataTester.m */,
+			);
+			name = "Generic Test Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,8 +206,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				077DB36A1D59E63B0070C854 /* User+CoreDataProperties.m in Sources */,
+				077DB36B1D59E63B0070C854 /* User.m in Sources */,
+				077DB36E1D59E6720070C854 /* EspressifCoreDataTester.m in Sources */,
 				077DB3411D59D0D40070C854 /* ViewController.m in Sources */,
 				077DB3551D59D2980070C854 /* ESPCoreDataHelper.m in Sources */,
+				077DB35E1D59E2C40070C854 /* Model.xcdatamodeld in Sources */,
 				077DB33E1D59D0D40070C854 /* AppDelegate.m in Sources */,
 				077DB33B1D59D0D40070C854 /* main.m in Sources */,
 			);
@@ -322,8 +360,22 @@
 				077DB34F1D59D0D40070C854 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		077DB35C1D59E2C40070C854 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				077DB35D1D59E2C40070C854 /* Model.xcdatamodel */,
+			);
+			currentVersion = 077DB35D1D59E2C40070C854 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 077DB32E1D59D0D40070C854 /* Project object */;
 }
