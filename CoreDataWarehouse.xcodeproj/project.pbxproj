@@ -13,6 +13,7 @@
 		077DB3441D59D0D40070C854 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077DB3421D59D0D40070C854 /* Main.storyboard */; };
 		077DB3461D59D0D40070C854 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077DB3451D59D0D40070C854 /* Assets.xcassets */; };
 		077DB3491D59D0D40070C854 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 077DB3471D59D0D40070C854 /* LaunchScreen.storyboard */; };
+		077DB3551D59D2980070C854 /* ESPCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 077DB3541D59D2980070C854 /* ESPCoreDataHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		077DB3481D59D0D40070C854 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		077DB34A1D59D0D40070C854 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		077DB3521D59D23E0070C854 /* ESPSingletonMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPSingletonMacro.h; sourceTree = "<group>"; };
+		077DB3531D59D2980070C854 /* ESPCoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESPCoreDataHelper.h; sourceTree = "<group>"; };
+		077DB3541D59D2980070C854 /* ESPCoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESPCoreDataHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 		077DB3501D59D1FD0070C854 /* Generic Core Data Classes */ = {
 			isa = PBXGroup;
 			children = (
+				077DB3531D59D2980070C854 /* ESPCoreDataHelper.h */,
+				077DB3541D59D2980070C854 /* ESPCoreDataHelper.m */,
 			);
 			name = "Generic Core Data Classes";
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				077DB3411D59D0D40070C854 /* ViewController.m in Sources */,
+				077DB3551D59D2980070C854 /* ESPCoreDataHelper.m in Sources */,
 				077DB33E1D59D0D40070C854 /* AppDelegate.m in Sources */,
 				077DB33B1D59D0D40070C854 /* main.m in Sources */,
 			);
