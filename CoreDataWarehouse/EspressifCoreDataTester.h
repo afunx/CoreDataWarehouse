@@ -10,4 +10,6 @@
 
 @interface EspressifCoreDataTester : NSObject
 
++ (void) testESPUser;
+
 @end

@@ -84,7 +84,12 @@ NSString *storeFilename = @"Espressif-IOT.sqlite";
         return;// Don't load store if it's already loaded
     }
     NSError *error = nil;
-    _store = [_coordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:[self storeURL] options:nil error:&error];
+    NSDictionary *options = @{
+                              NSMigratePersistentStoresAutomaticallyOption  :@"YES",
+                              NSInferMappingModelAutomaticallyOption        :@"YES",
+                              NSSQLitePragmasOption                         :@{@"journal_mode":@"DELETE"}
+                              };
+    _store = [_coordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:[self storeURL] options:options error:&error];
     if (!_store) {
         NSLog(@"Failed to add store. Error: %@ in %@", error, self.class);
         abort();
